@@ -1,23 +1,24 @@
-
-/* A Bison parser, made by GNU Bison 2.4.1.  */
+/* A Bison parser, made by GNU Bison 2.3.  */
 
 /* Skeleton interface for Bison's Yacc-like parsers in C
-   
-      Copyright (C) 1984, 1989, 1990, 2000, 2001, 2002, 2003, 2004, 2005, 2006
+
+   Copyright (C) 1984, 1989, 1990, 2000, 2001, 2002, 2003, 2004, 2005, 2006
    Free Software Foundation, Inc.
-   
-   This program is free software: you can redistribute it and/or modify
+
+   This program is free software; you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
-   the Free Software Foundation, either version 3 of the License, or
-   (at your option) any later version.
-   
+   the Free Software Foundation; either version 2, or (at your option)
+   any later version.
+
    This program is distributed in the hope that it will be useful,
    but WITHOUT ANY WARRANTY; without even the implied warranty of
    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
    GNU General Public License for more details.
-   
+
    You should have received a copy of the GNU General Public License
-   along with this program.  If not, see <http://www.gnu.org/licenses/>.  */
+   along with this program; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor,
+   Boston, MA 02110-1301, USA.  */
 
 /* As a special exception, you may create a larger work that contains
    part or all of the Bison parser skeleton and distribute that work
@@ -28,10 +29,9 @@
    special exception, which will cause the skeleton and the resulting
    Bison output files to be licensed under the GNU General Public
    License without this special exception.
-   
+
    This special exception was added by the Free Software Foundation in
    version 2.2 of Bison.  */
-
 
 /* Tokens.  */
 #ifndef YYTOKENTYPE
@@ -90,39 +90,41 @@
      GREATERTHANEQUAL = 306,
      DOUBLEEQUAL = 307,
      NOTEQUAL = 308,
-     GLOBAL = 309,
-     YIELD = 310,
-     IMPORT = 311,
-     RETURN = 312,
-     AS = 313,
-     TYPE_COMMENT = 314,
-     FOR = 315,
-     DEL = 316,
-     NONLOCAL = 317,
-     ELIF = 318,
-     NEWLINE = 319,
-     TRUE = 320,
-     NONE = 321,
-     CLASS = 322,
-     DEDENT = 323,
-     FINALLY = 324,
-     WITH = 325,
-     EXPECT = 326,
+     ENDMARKER = 309,
+     BREAK = 310,
+     PASS = 311,
+     CONTINUE = 312,
+     GLOBAL = 313,
+     NONLOCAL = 314,
+     NEWLINE = 315,
+     ASYNC = 316,
+     TYPE_COMMENT = 317,
+     IMPORT = 318,
+     RAISE = 319,
+     FROM = 320,
+     DEL = 321,
+     NUMBER = 322,
+     NONE = 323,
+     TRUE = 324,
+     FALSE = 325,
+     CLASS = 326,
      IS = 327,
-     MATCH = 328,
-     CONTINUE = 329,
-     RAISE = 330,
-     FROM = 331,
-     PASS = 332,
-     LAMBDA = 333,
-     DEF = 334,
-     FALSE = 335,
-     CASE = 336,
-     ASSERT = 337,
-     AWAIT = 338,
-     BREAK = 339,
-     ASYNC = 340,
-     TRY = 341
+     AS = 328,
+     FOR = 329,
+     AWAIT = 330,
+     ELIF = 331,
+     WITH = 332,
+     DEF = 333,
+     DEDENT = 334,
+     TRY = 335,
+     EXCEPT = 336,
+     FINALLY = 337,
+     MATCH = 338,
+     CASE = 339,
+     RETURN = 340,
+     ASSERT = 341,
+     YIELD = 342,
+     LAMBDA = 343
    };
 #endif
 /* Tokens.  */
@@ -177,50 +179,51 @@
 #define GREATERTHANEQUAL 306
 #define DOUBLEEQUAL 307
 #define NOTEQUAL 308
-#define GLOBAL 309
-#define YIELD 310
-#define IMPORT 311
-#define RETURN 312
-#define AS 313
-#define TYPE_COMMENT 314
-#define FOR 315
-#define DEL 316
-#define NONLOCAL 317
-#define ELIF 318
-#define NEWLINE 319
-#define TRUE 320
-#define NONE 321
-#define CLASS 322
-#define DEDENT 323
-#define FINALLY 324
-#define WITH 325
-#define EXPECT 326
+#define ENDMARKER 309
+#define BREAK 310
+#define PASS 311
+#define CONTINUE 312
+#define GLOBAL 313
+#define NONLOCAL 314
+#define NEWLINE 315
+#define ASYNC 316
+#define TYPE_COMMENT 317
+#define IMPORT 318
+#define RAISE 319
+#define FROM 320
+#define DEL 321
+#define NUMBER 322
+#define NONE 323
+#define TRUE 324
+#define FALSE 325
+#define CLASS 326
 #define IS 327
-#define MATCH 328
-#define CONTINUE 329
-#define RAISE 330
-#define FROM 331
-#define PASS 332
-#define LAMBDA 333
-#define DEF 334
-#define FALSE 335
-#define CASE 336
-#define ASSERT 337
-#define AWAIT 338
-#define BREAK 339
-#define ASYNC 340
-#define TRY 341
+#define AS 328
+#define FOR 329
+#define AWAIT 330
+#define ELIF 331
+#define WITH 332
+#define DEF 333
+#define DEDENT 334
+#define TRY 335
+#define EXCEPT 336
+#define FINALLY 337
+#define MATCH 338
+#define CASE 339
+#define RETURN 340
+#define ASSERT 341
+#define YIELD 342
+#define LAMBDA 343
 
 
 
 
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
 typedef int YYSTYPE;
-# define YYSTYPE_IS_TRIVIAL 1
 # define yystype YYSTYPE /* obsolescent; will be withdrawn */
 # define YYSTYPE_IS_DECLARED 1
+# define YYSTYPE_IS_TRIVIAL 1
 #endif
 
 extern YYSTYPE yylval;
-
 

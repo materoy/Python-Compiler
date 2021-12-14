@@ -15,6 +15,54 @@ special_start \(
 special_end   \)
 alpha [a-zA-Z]
 
+LPAR                    '('
+RPAR                    ')'
+LSQB                    '['
+RSQB                    ']'
+COLON                   ':'
+COMMA                   ','
+SEMI                    ';'
+PLUS                    '+'
+MINUS                   '-'
+STAR                    '*'
+SLASH                   '/'
+VBAR                    '|'
+AMPER                   '&'
+LESS                    '<'
+GREATER                 '>'
+EQUAL                   '='
+DOT                     '.'
+PERCENT                 '%'
+LBRACE                  '{'
+RBRACE                  '}'
+EQEQUAL                 '=='
+NOTEQUAL                '!='
+LESSEQUAL               '<='
+GREATEREQUAL            '>='
+TILDE                   '~'
+CIRCUMFLEX              '^'
+LEFTSHIFT               '<<'
+RIGHTSHIFT              '>>'
+DOUBLESTAR              '**'
+PLUSEQUAL               '+='
+MINEQUAL                '-='
+STAREQUAL               '*='
+SLASHEQUAL              '/='
+PERCENTEQUAL            '%='
+AMPEREQUAL              '&='
+VBAREQUAL               '|='
+CIRCUMFLEXEQUAL         '^='
+LEFTSHIFTEQUAL          '<<='
+RIGHTSHIFTEQUAL         '>>='
+DOUBLESTAREQUAL         '**='
+DOUBLESLASH             '//'
+DOUBLESLASHEQUAL        '//='
+AT                      '@'
+ATEQUAL                 '@='
+RARROW                  '->'
+ELLIPSIS                '...'
+COLONEQUAL              ':='
+
 %{
 #include<stdio.h>
 #include"y.tab.h"
@@ -83,7 +131,7 @@ with                    {printf("with"); return WITH;}
 await                   {printf("await"); return AWAIT;}    
 try                     {printf("try"); return TRY;}
 match                   {printf("match"); return MATCH;}   
-expect                  {printf("expect"); return EXPECT;}    
+except                  {printf("except"); return EXCEPT;}    
 
 \<			{printf("lessthan ");return LESSTHAN;}
 \<=			{printf("lessthanequal ");return LESSTHANEQUAL;}
